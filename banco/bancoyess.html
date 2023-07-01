@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es" >
+  <head>
+    <meta charset="utf-8">
+    <title>BancoYess</title>
+    <style>
+       body
+       {
+         background-color: #5E8522;
+       }
+       h1
+       {
+         color: white;
+         font-family: Lucida Bright;
+       }
+       span
+       {
+         color: white;
+         font-family: Lucida Bright;
+         font-size: 20px;
+       }
+       header
+       {
+         color: white;
+         font-size: 20px;
+       }
+       p{
+         color: white;
+         font-size: 18px;
+       }
+       form{
+         color: white;
+         font-size: 18px;
+       }
+       input {
+         text-decoration: none;
+         border: black;
+         padding: 12px 40px;
+         font-size: 16px;
+         background-color: white;
+         color: #3C5A0E;
+         border-radius: 5px;
+         box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+         cursor: pointer;
+         outline: none;
+         transition: 0.2s all;
+         transform: scale(0.98);
+        }
+        .btn{
+            text-decoration: none;
+            border: none;
+            padding: 12px 40px;
+            font-size: 16px;
+            background-color: #B2CB8A;
+            color: #5E8522;
+            border-radius: 5px;
+            box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+            cursor: pointer;
+            outline: none;
+            transition: 0.2s all;
+        }
+        .btn:active {
+             transform: scale(0.98);
+             /* Scaling button to 0.98 to its original size */
+             box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+             /* Lowering the shadow */
+         }
+
+    </style>
+  </head>
+  <body>
+    <div class = "marco">
+      <header>
+         <h1>BancoYess</h1><span>Seguro y confiable</span>
+      </header>
+      <div class= "informacion">
+        <p>Bienvenidos al sistema de tranferencias del BancoYess;
+          <br />Horario de atención: de 09:00 hr a 12:00 hr y de 15:00 hr a 20:00.
+        </p>
+      </div>
+      <hr>
+      <form class ="formu">
+        <div>
+            <p>
+              A continuación ingresa los datos de tu transferencia:
+           </p>
+        </div>
+
+        <div class="agrupado">
+        <label>Ingrese el banco destino: </label></br>
+        <input type="text" id="banco_destino" value="">
+          </div>
+        <div class ="agrupado">
+          <label>Ingrese la cuenta destino: </label></br>
+        <input type="text" id="cuenta_destino">
+      </div>
+      <div class="agrupado">
+        <label>Ingrese el monto a transferir: </label></br>
+        <input type="text" id="monto_transferir" value="">
+      </div></br>
+      <button class="btn">Realizar transferencia</button>
+    </form></br>
+    <hr>
+    <p>Nota importante: Las transacciones a otros bancos tienen una comisión de un 10%</p>
+
+    <script src="banco.js"></script>
+
+  </body>
+</html>

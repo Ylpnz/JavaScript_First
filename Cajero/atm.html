@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cajero Automatico</title>
+    <meta charset="utf-8" />
+    <style>
+        body
+        {
+          background-color: #7e7e7e;
+        }
+        h1
+        {
+          margin-left: 45px;
+          color: #FFFFFF;
+          font-family: inherit;
+          font-size: 19px;
+          text-align: center;
+        }
+        .texto
+        {
+          margin-left: 43px;
+          background-color: black;
+          height: 50px;
+          width: 200px;
+          color: blue;
+          font-size: 30px;
+          text-align: center;
+        }
+        .Contenidos
+        {
+          padding-left: 130px;
+          position: absolute;
+          top: 140px;
+        }
+        .boton
+        {
+          margin-left: 50px;
+          position: left;
+          width: 195px;
+          height: 55px;
+          font-family: monospace;
+          color: #67ed3e;
+          font-size: 18px;
+          font-weight: 700;
+          background-color: #363636;
+        }
+        .display
+        {
+          position: absolute;
+          padding-left: 150px;
+          text-align: center;
+          top: 460px;
+          font-family: monospace;
+          font-size: 20px;
+          color: white;
+        }
+        .display2
+        {
+          position: absolute;
+          padding-left: 10px;
+          font-family: monospace;
+          font-size: 20px;
+          color: white;
+        }
+        .base
+        {
+          position: center;
+          margin: auto;
+          width: 1060px;
+        }
+      </style>
+    </head>
+    <body>
+  <div class="base">
+        <img class="baseCajero" src="cajeroautomatico.gif"></img>
+
+        <div class="Contenidos">
+          <p class= "datos">
+            <h1><strong>Ingrese el monto deseado</strong></h1>
+            <input class="texto" type="text" id="pantalla_texto" /><br />
+            <br /><input type="button" value="EXTRAER" class="boton" id="botonExtraer" />
+          </p>
+        </div>
+
+        <div class="display">
+          <p id="resultado">
+          </p>
+        </div>
+
+        <div class="display2" >
+          <p id="carga_id">
+          </p>
+        </div>
+      </div>
+      <script type="text/javascript" src="Cajero.js"></script>
+    </body>
+  </html>
